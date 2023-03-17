@@ -1,36 +1,40 @@
 
+let textCount=0;
+let boxCount=0;
 document.querySelector('.toDoList_contents_btn').addEventListener('click',function(){
- 
-    const newList = document.querySelector('.toDoList_contents_text').value;
+  
+    const newText_input = document.querySelector('.toDoList_contents_text').value;
     
-    if(newList ==''){
+    if(newText_input ==''){
         alert("넌 목표도없냐 이새끼야")
     }else{
         const newText = 
         `
-        <div class="list_name">${newList}
-        <input type="checkbox" class="content_checkbox"><lable for="checkbox"></lable>
+        <div class="list_name">${newText_input}
+        <input type="checkbox" class="content_checkbox" ><lable for="checkbox"></lable>
         </div>
         
         `;
         
-        document.querySelector('.main_column_toDoList').insertAdjacentHTML('beforeend',newText)
-    }
+        const newList = document.createElement('div');
+        newList.innerHTML = newText;
+        const newCheckbox = newList.querySelector('.content_checkbox');
+        newCheckbox.addEventListener('click', function() {
+            boxCount++;
+            if(boxCount ===textCount && boxCount>0){
 
+                document.getElementsByClassName('screen-header__message')[0].innerHTML="힘내라 내일보자"
+            }
+        });
+        
+        document.querySelector('.main_column_toDoList').appendChild(newList);
+        textCount++;
+        
+         }
 
-    
-
+         
+        
 })
 
 
-
-
-// 지금 문제점 배운게 머릿속에서 정리가 X
-// 그래서 순서대로 코드짜는게 아니고 아 이거 해야될 것 같은데 하고 있음
-// 순서를 먼저 정리하자.
-
-
-// 1. 버튼 클릭 시 이벤트 작동
-// 2. input 텍스트의 입력값을 저장
-// 3. div 생성하고 내부 html 추가 ? 존나어려워 
-//  걍 뭘해야되는지 모르네 이러니 못하지 
+   
