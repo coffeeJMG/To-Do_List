@@ -37,4 +37,11 @@ document.querySelector('.toDoList_contents_btn').addEventListener('click',functi
 })
 
 
+document.querySelector('.ready').addEventListener('click', function(){
+
+        let readyBtn= document.querySelector('.black-bg')
+        readyBtn.fadeOut();
+        readyBtn.fadeOut("slow");
+        readyBtn.fadeOut(2000);
+})
    
