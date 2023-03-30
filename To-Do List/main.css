@@ -8,22 +8,21 @@
 
 
 .main_column_toDoList{
-    width: 60vw;
+    width: 50vw;
     border-right: 2px solid;
     height: 600px;
+    
 }
-
 
 
 .main_column_toDoList_contents{
-
     display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .toDoList_contents_text{
-    margin : 10px 10px 10px 20px;
-    width: 40vw;
+    margin : 10px 20px 10px 20px;
+    width: 30vw;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -37,8 +36,12 @@
 input[type="checkbox"]{
  
     
-    transform: scale(1.5) translateX(525px) translateY(5px);
+    transform: scale(1.5) translateY(5px);
     
+}
+
+.content_checkbox{
+    padding-top:10px;
 }
 
 .toDoList_contents_btn{
@@ -47,21 +50,27 @@ input[type="checkbox"]{
     height: 45px;
     margin-right: 10px;
     margin-top: 18px;
-    transform: translateX(-240px);
-    
    
-
-    
 }
 
-.list_name{
-    margin : 10px 10px 10px 20px;
-    width: 40vw;
+.contents_deleteBtn{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.new_contents_text{
+    
+    margin : 10px 20px 10px 20px;
+    width: 30vw;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 20px ;
-    border : solid green;
-    background-color : white;
+    border : solid green
 }
 
+.ex{
+    text-decoration: line-through;
+}

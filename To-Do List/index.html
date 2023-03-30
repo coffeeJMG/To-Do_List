@@ -11,14 +11,13 @@
     
 </head>
 <body>
-        
-        <div id="container">
-            <div class="black-bg"   >
-                <div class="white-box">
-                    <h1>당신은 할 수 있어요</h1>
-                    <button class="ready">시작하기</button>
-                </div>
+        <div class="black-bg hide-modal" >
+            <div class="white-bg">
+                <h1>당신은 할 수 있어요</h1>
+                <button>시작하기</button>
             </div>
+        </div>
+        <div id="container">
             <div class="banner" ></div>
         
             <header id="screen-header">
@@ -28,7 +27,7 @@
                     <button class="screen-header__week"><a href="Tuesday.html">화요일</a></button>
                     <button class="screen-header__week"><a href="Wednesday.html">수요일</a></button>
                     <button class="screen-header__week"><a href="Thursday.html">목요일</a></button>
-                    <button class="screen-header__week"><a href="Friday.html">금요일</a></button>
+                    <button     class="screen-header__week"><a href="Friday.html">금요일</a></button>
                     <button class="screen-header__week"><a href="Saturday.html">토요일</a></button>
                     <button class="screen-header__week"><a href="Sunday.html">일요일</a></button>
                     
@@ -43,10 +42,9 @@
                 <div class="main_column">
                     <div class="main_column_toDoList">
                         <div class="main_column_toDoList_contents"> 
-                            <input type="text"  placeholder="목표를 입력하세요" class="toDoList_contents_text">
+                            <input type="text" onkeyup="enterkey();" placeholder="목표를 입력하세요" class="toDoList_contents_text">
+                      
                             <input type="submit" class="toDoList_contents_btn" value="입력">
-                            
-                            
                         </div>
                        
                     </div>
@@ -63,10 +61,9 @@
         
         </div>
       
-
-   
     
-    <script src="index.js"></script>
+    
+    <script src="enter.js"></script>
+    <script src="input.js"></script>
 </body>
 </html>
-

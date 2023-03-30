@@ -8,46 +8,15 @@
 } */
 
 #container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
 }
 
 
 .black-bg{
-   width: 100px;
-   height: 100px;
-   position: fixed;
-   z-index :5 ;
-   visibility : hidden;
-   opacity : 0;
-    transition : all 2s;
-    
-}
-
-.black-bg{
-    
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
-    visibility : visible;
-    opacity : 1;
-    display:flex;
-    justify-content: center;
-    text-align: center;
+    display:block;
+    opacity:1;
+
 }
-
-.white-box {
-    width: 100px;
-    height: 100px;
-   
-    background-color: aqua;
-    color:blue;
-    
-}
-
-/* 조건1. 어두운화면에 응원멘트와 시작하기 버튼이 가운데 등장한다.
-조건2. 시작하기 버튼을 누르면 2초에 걸쳐서 1번 조건이 사라진다.
-
-순서  1. 처음 시작화면 css 완성
-순서  2. 사라지게 하는 css 완성
-순서  3. 애니메이션 효과? 아마 트랜지션 2s 하면 될듯  */
