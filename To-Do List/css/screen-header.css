@@ -45,6 +45,10 @@
     font-weight: bold;
     font-size: 50px;
 }
+#weather{
+    font-weight: bold;
+    font-size: 30px;
+}
 .screen-header_login_text{
     margin : 10px 20px 10px 20px;
     width: 200px;
@@ -55,14 +59,15 @@
     border : solid #659F7C
 }
 .screen-header_login_text{
-    margin: auto;
+    
+    margin: 10px auto auto auto;
 }
 
 .screen-header_login_btn{
     width: 45px;
     height: 45px;
     margin-top: 18px;
-    
+    margin-right: 10px;
     border-radius: 10px;
     border : solid #659F7C  
 }

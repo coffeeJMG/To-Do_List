@@ -1,5 +1,5 @@
-    let textCount=0;
-    let boxCount=0;
+    // let textCount=0;
+    // let boxCount=0;
 
 
 
@@ -87,11 +87,11 @@
         
     function checkBox(){
 
-        boxCount++;
-        if(boxCount ===textCount && boxCount>0){
+        // boxCount++;
+        // if(boxCount ===textCount && boxCount>0){
 
-        document.getElementsByClassName('screen-header__message')[0].innerHTML="힘내라 내일보자"
-        }
+        // document.getElementsByClassName('screen-header__message')[0].innerHTML="힘내라 내일보자"
+        // }
         const checkList = this.parentNode.querySelector('.new_contents_text');
         
         if(checkList.style.textDecoration === 'line-through'){
