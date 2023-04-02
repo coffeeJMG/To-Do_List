@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly To-Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     
 </head>
@@ -27,7 +27,7 @@
                     <button class="screen-header__week"><a href="Tuesday.html">화요일</a></button>
                     <button class="screen-header__week"><a href="Wednesday.html">수요일</a></button>
                     <button class="screen-header__week"><a href="Thursday.html">목요일</a></button>
-                    <button class="screen-header__week"><a href="Friday.html">금요일</a></button>
+                    <button     class="screen-header__week"><a href="Friday.html">금요일</a></button>
                     <button class="screen-header__week"><a href="Saturday.html">토요일</a></button>
                     <button class="screen-header__week"><a href="Sunday.html">일요일</a></button>
                     
@@ -42,12 +42,13 @@
                 <div class="main_column">
                     <div class="main_column_toDoList">
                         <div class="main_column_toDoList_contents"> 
-                            <input type="text"  placeholder="목표를 입력하세요" class="toDoList_contents_text">
-                            <input type="submit" class="toDoList_contents_btn" value="입력">
-                            <input type="checkbox" class="content_checkbox"><lable for="checkbox"></lable>
+                            <form id="todo-form">
+                                <input type="text"  placeholder="목표를 입력하세요" class="toDoList_contents_text">
+                            </form>
                             
+                            <input type="submit" class="toDoList_contents_btn" value="입력">
                         </div>
-                        
+                       
                     </div>
                 </div>
     
@@ -62,11 +63,11 @@
         
         </div>
       
-
-   
     
-    <script src="index.js"></script>
-<script>
+  
+    
+    <script src="input.js"></script>
+    <script>
         document.getElementsByClassName('screen-header__week')[1].style.color="orange";
     </script>
 </body>

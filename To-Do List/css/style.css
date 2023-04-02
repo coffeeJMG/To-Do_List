@@ -9,14 +9,14 @@
 
 #container{
     width: 100vw;
+    background-color: #B1D5C2;
 }
 
 
-.black-bg{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display:block;
-    opacity:1;
 
+img {
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    
 }
