@@ -19,8 +19,11 @@
         
         toDos.push(newTextObj)
         addList(newTextObj)
-    
-        saveToDos();    
+        
+        if(newText_input !==''){
+            saveToDos(); 
+        }
+          
     }
 
         
