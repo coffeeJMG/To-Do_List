@@ -5,6 +5,11 @@
 
 
 
+    const toDoInput = document.querySelector('.toDoList_contents_text')
+
+
+
+
     document.querySelector('.toDoList_contents_btn').addEventListener('click',executeEvent)
     document.querySelector('#todo-form').addEventListener('submit', executeEvent)
 
@@ -19,8 +24,11 @@
         
         toDos.push(newTextObj)
         addList(newTextObj)
-    
-        saveToDos();    
+        
+        if(newText_input !==''){
+            saveToDos(); 
+        }
+          
     }
 
         
@@ -107,5 +115,3 @@
         
             
         }
-
-
